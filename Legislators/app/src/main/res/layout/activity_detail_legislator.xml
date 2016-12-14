@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail_legislator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mobilesiri.volleycustomlistview.DetailLegislator">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/websitepic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"/>
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/twitterpic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/websitepic"
+                android:layout_marginRight="37dp"/>
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/facebookpic"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toLeftOf="@id/twitterpic"
+                android:layout_marginRight="37dp"/>
+
+
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/detailpic"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="60dp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/partypic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/detailpic"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="83dp"
+                android:layout_marginStart="83dp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/partyName"
+                android:textSize="32sp"
+                android:textColor="@color/text"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_alignTop="@+id/partypic"
+                android:layout_toRightOf="@+id/partypic"
+                android:layout_toEndOf="@+id/partypic" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameval"
+                android:textSize="20sp"
+                android:textColor="@color/text"
+                android:layout_marginTop="16dp"
+                android:gravity="right"
+                android:layout_below="@+id/partypic"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/activity_horizontal_margin" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:layout_alignBaseline="@+id/nameval"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:textSize="20sp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailval"
+                android:textSize="20sp"
+                android:textColor="@color/text"
+                android:layout_marginTop="16dp"
+                android:gravity="right"
+                android:layout_below="@+id/nameval"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/activity_horizontal_margin" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/emailval"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_alignStart="@+id/name" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/chamberval"
+                android:textSize="20sp"
+                android:textColor="@color/text"
+                android:layout_marginTop="16dp"
+                android:gravity="right"
+                android:layout_below="@+id/emailval"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/activity_horizontal_margin" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chamber"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/chamberval"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_alignStart="@+id/name" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactval"
+                android:textSize="20sp"
+                android:textColor="@color/text"
+                android:layout_marginTop="16dp"
+                android:gravity="right"
+                android:layout_below="@+id/chamberval"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/activity_horizontal_margin" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/contactval"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_alignStart="@+id/name" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/startval"
+                android:textSize="20sp"
+                android:textColor="@color/text"
+                android:layout_marginTop="16dp"
+                android:gravity="right"
+                android:layout_below="@+id/contactval"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/activity_horizontal_margin" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/start"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/startval"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_alignStart="@+id/name" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/endval"
+                android:textSize="20sp"
+                android:textColor="@color/text"
+                android:layout_marginTop="16dp"
+                android:gravity="right"
+                android:layout_below="@+id/startval"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/activity_horizontal_margin" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/end"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/endval"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_alignStart="@+id/name" />
+
+            <!--<TextView-->
+                <!--android:text="TextView"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/termval"-->
+                <!--android:textSize="20sp"-->
+                <!--android:textColor="@color/text"-->
+                <!--android:layout_marginTop="16dp"-->
+                <!--android:gravity="right"-->
+                <!--android:layout_below="@+id/endval"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:paddingRight="@dimen/activity_horizontal_margin" />-->
+
+            <ProgressBar
+                android:id="@+id/termval"
+                style="@android:style/Widget.Material.Light.ProgressBar.Horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:indeterminate="false"
+                android:max="100"
+                android:maxHeight="12dip"
+                android:minHeight="12dip"
+                android:progressDrawable="@drawable/customprogressbar"
+                android:minWidth="200dp"
+                android:progress="80"
+                android:layout_alignBottom="@+id/term"
+                android:layout_alignTop="@+id/term" />
+            <!--http://colintmiller.com/how-to-add-text-over-a-progress-bar-on-android/-->
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/term"
+                android:textSize="20sp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/end"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_alignStart="@+id/name" />
+
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/officeval"
+                android:textSize="20sp"
+                android:textColor="@color/text"
+                android:layout_marginTop="16dp"
+                android:gravity="right"
+                android:layout_below="@+id/termval"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/activity_horizontal_margin" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/office"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/officeval"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_alignStart="@+id/name" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/stateval"
+                android:textSize="20sp"
+                android:textColor="@color/text"
+                android:layout_marginTop="16dp"
+                android:gravity="right"
+                android:layout_below="@+id/officeval"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/activity_horizontal_margin" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/state"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/stateval"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_alignStart="@+id/name" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/faxval"
+                android:textSize="20sp"
+                android:textColor="@color/text"
+                android:layout_marginTop="16dp"
+                android:gravity="right"
+                android:layout_below="@+id/stateval"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/activity_horizontal_margin" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fax"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/faxval"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_alignStart="@+id/name" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/birthdayval"
+                android:textSize="20sp"
+                android:textColor="@color/text"
+                android:layout_marginTop="16dp"
+                android:gravity="right"
+                android:layout_below="@+id/faxval"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/activity_horizontal_margin" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/birthday"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/birthdayval"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_alignStart="@+id/name" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
